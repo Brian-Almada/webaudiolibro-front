@@ -17,11 +17,12 @@ export default function Home() {
         console.log(err)
     })
   }, [])
+  console.log(books)
   return (
     <div>
       <h1>hello</h1>
       {books.map(b => (
-        <div>
+        <div className="df aic jcsb">
           <h1>{b.title}</h1>
           <p>{b.description}</p>
         </div>

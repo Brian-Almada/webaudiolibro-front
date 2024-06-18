@@ -95,6 +95,18 @@ a {
   text-decoration: none;
 }
 
+.df {
+  display: flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+jcsb {
+  justify-content: space-between;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
