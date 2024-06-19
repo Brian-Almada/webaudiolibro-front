@@ -26,6 +26,9 @@ export default function Home() {
         <div key={b._id} className="df aic jcsb">
           <h1>{b.title}</h1>
           <p>{b.description}</p>
+          <p>{b.author}</p>
+          <p>{b.thumbnail}</p>
+          <p>{b.audio}</p>
         </div>
       ))}
     </div>
