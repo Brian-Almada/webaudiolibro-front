@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+        domains: ["audlib.blob.core.windows.net"],
+    }
+};
 
 export default nextConfig;

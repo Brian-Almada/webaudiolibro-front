@@ -1,6 +1,7 @@
 "use client";
 import './page.module.css';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const [books, setBooks] = useState([]);
@@ -25,7 +26,11 @@ export default function Home() {
       <h1>hello</h1>
       {books.map((b) => (
         <div key={b._id} className="df aic jcsb">
-          
+          <Image
+            src={b.thumbnail}
+            alt={b.title}
+            layout='fill'
+          />
           <h1>{b.title}</h1>
           <p>{b.description}</p>
           <p>{b.author}</p>
