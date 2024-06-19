@@ -1,4 +1,5 @@
 "use client";
+import './page.module.css';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <h1>hello</h1>
       {books.map((b) => (
         <div key={b._id} className="df aic jcsb">
+          
           <h1>{b.title}</h1>
           <p>{b.description}</p>
           <p>{b.author}</p>
