@@ -29,7 +29,8 @@ export default function Home() {
           <Image
             src={b.thumbnail}
             alt={b.title}
-            layout='fill'
+            width={356}
+            height={200}
           />
           <h1>{b.title}</h1>
           <p>{b.description}</p>
