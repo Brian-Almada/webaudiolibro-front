@@ -23,20 +23,25 @@ export default function Home() {
 
   return (
     <div>
-      <h1>hello</h1>
+      <h1>Audio Libros</h1>
       {books.map((b) => (
-        <div key={b._id} className="df aic jcsb">
-          <Image
-            src={b.thumbnail}
-            alt={b.title}
-            width={356}
-            height={200}
-          />
-          <h1>{b.title}</h1>
-          <p>{b.description}</p>
-          <p>{b.author}</p>
-          <p>{b.thumbnail}</p>
-          <p>{b.audio}</p>
+        <div key={b._id} className="df aic jcsb fdc">
+          <div>
+            <Image
+              src={b.thumbnail}
+              alt={b.title}
+              width={356}
+              height={200}
+            />
+          </div>
+          <div>
+            <h1>{b.title}</h1>
+            <p>{b.description}</p>
+            <p>{b.author}</p>
+            <Audio
+              src={b.audio}
+            />
+          </div>
         </div>
       ))}
     </div>

@@ -113,6 +113,10 @@
   display: flex;
 }
 
+.fdc {
+  flex-direction: column;
+}
+
 .aic {
   align-items: center;
 }
