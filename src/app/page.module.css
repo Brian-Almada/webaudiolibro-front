@@ -108,6 +108,19 @@
 .logo {
   position: relative;
 }
+
+.df {
+  display: flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
