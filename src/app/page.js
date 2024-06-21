@@ -2,6 +2,7 @@
 import './page.module.css';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import AudioPlayer from './audioPlayer';
 
 export default function Home() {
   const [books, setBooks] = useState([]);
@@ -38,9 +39,11 @@ export default function Home() {
             <h1>{b.title}</h1>
             <p>{b.description}</p>
             <p>{b.author}</p>
-            <Audio
-              src={b.audio}
-            />
+            <div>
+              <AudioPlayer
+                src={b.audio}
+              />
+            </div>
           </div>
         </div>
       ))}
