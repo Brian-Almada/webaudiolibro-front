@@ -24,7 +24,11 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Audio Libros</h1>
+      <div className="df aic jcsb">
+        <h1>Audio Libros</h1>
+        <button>Iniciar Sesión</button>
+      </div>
+
       {books.map((b) => (
         <div key={b._id} className="df aic jcsb fdc">
           <div>
