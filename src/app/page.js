@@ -27,7 +27,6 @@ export default function Home() {
       <div className="df fdc aic jcc">
         <div className="df fdc p5 tac mb5">
           <h1>Audio Libros</h1>
-          <button>Iniciar Sesión</button>
         </div>
 
         {books.map((b) => (
