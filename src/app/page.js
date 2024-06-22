@@ -2,7 +2,7 @@
 import './globals.css';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import AudioPlayer from './audioPlayer';
+import AudioPlayer from '../../components/AudioPlayer';
 
 export default function Home() {
   const [books, setBooks] = useState([]);
@@ -51,7 +51,7 @@ export default function Home() {
               </div>
             </div>
           ))}
-        </div>  
+        </div>
       </div>
     </>
   );
