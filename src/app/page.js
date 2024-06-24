@@ -1,8 +1,8 @@
 "use client";
 import './globals.css';
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import AudioPlayer from '../../components/AudioPlayer';
+
+
 import BookCard from '../../components/BookCard';
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
         <div className="df mt10">
           {books.map((b) => (
-            <BookCard key={b.id} book={b} />
+            <BookCard key={b._id} book={b} />
           ))}
         </div>
       </div>

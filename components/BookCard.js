@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import AudioPlayer from './AudioPlayer'
 const BookCard = ({book}) => {
-    const {thumbnail,title,author, description, audio, _id} = book
+    const {thumbnail,title,author, description, audio} = book
     return (
         <>
-        <div key={_id} className="df aic jcsb fdc">
+        <div className="df aic jcsb fdc">
             <div>
                 <Image
                     src={thumbnail}
