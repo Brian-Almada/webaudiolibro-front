@@ -3,6 +3,7 @@ import './globals.css';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import AudioPlayer from '../../components/AudioPlayer';
+import BookCard from '../../components/BookCard';
 
 export default function Home() {
   const [books, setBooks] = useState([]);
@@ -30,27 +31,7 @@ export default function Home() {
         </div>
         <div className="df mt10">
           {books.map((b) => (
-            <div key={b._id} className="df aic jcsb fdc">
-              <div>
-                <Image
-                  src={b.thumbnail}
-                  alt={b.title}
-                  width={356}
-                  height={200}
-                  priority
-                />
-              </div>
-              <div>
-                <h1>{b.title}</h1>
-                <p>{b.description}</p>
-                <p>{b.author}</p>
-                <div>
-                  <AudioPlayer
-                    src={b.audio}
-                  />
-                </div>
-              </div>
-            </div>
+            <BookCard key={b.id} book={b} />
           ))}
         </div>
       </div>
