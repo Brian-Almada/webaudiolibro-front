@@ -40,6 +40,13 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+.imagediv {
+  position: relative;
+  width: 100%; /* o el tamaño que prefieras */
+  height: 100%; /* o el tamaño que prefieras */
+}
+
+
 .cursorp { cursor: pointer }
 
 .posr { position: relative}
