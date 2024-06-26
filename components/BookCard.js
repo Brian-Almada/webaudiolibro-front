@@ -11,7 +11,7 @@ const BookCard = ({book}) => {
                     alt={title}
                     width={300}
                     height={300}
-                    layout="responsive"
+                    layout='responsive'
                     priority
                 />
             </div>
