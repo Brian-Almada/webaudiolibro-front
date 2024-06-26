@@ -9,7 +9,7 @@ export default function Home() {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/books')
+    fetch(`${process.env.NEXT_PUBLIC_BASE_BACKEND_URL}/books`)
       .then((res) => res.json())
       .then(({ ok, data }) => {
         if (ok) {
