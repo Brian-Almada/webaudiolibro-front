@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 import BookCard from '../../components/BookCard';
 
-const BASE_BACKEND_URL = !!process.env.VERCEL_ENV ? process.env.NEXT_PUBLIC_BASE_BACKEND_URL : 'http://localhost:4000'
+const BASE_BACKEND_URL = !!process.env.NEXT_PUBLIC_VERCEL_ENV ? process.env.NEXT_PUBLIC_BASE_BACKEND_URL : 'http://localhost:4000'
 export default function Home() {
   const [books, setBooks] = useState([]);
 
