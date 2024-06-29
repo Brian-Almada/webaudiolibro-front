@@ -4,10 +4,12 @@ import { useEffect, useState } from 'react';
 
 
 import BookCard from '../../components/BookCard';
+import { Calistoga } from 'next/font/google';
 
-const BASE_BACKEND_URL = process.env.NEXT_PUBLIC_BASE_BACKEND_URL
+const BASE_BACKEND_URL = !!process.env.NEXT_PUBLIC_VERCEL_ENV ? process.env.NEXT_PUBLIC_BASE_BACKEND_URL : "http://localhost:4000";
 export default function Home() {
   const [books, setBooks] = useState([]);
+  console.log(BASE_BACKEND_URL);
 
   useEffect(() => {
     fetch(`${BASE_BACKEND_URL}/books`)
